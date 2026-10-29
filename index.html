@@ -18,14 +18,14 @@ nav{max-width:1100px;margin:auto;padding:18px 20px;display:flex;justify-content:
 .links a{font-size:13px;color:#d9e8df}
 .links a:hover{color:var(--green)}
 section{max-width:1100px;margin:auto;padding:75px 22px;scroll-margin-top:75px}
-.hero{min-height:520px;text-align:center;display:grid;place-items:center;background:radial-gradient(ellipse at center,#10321e 0%,#050807 68%);position:relative;overflow:hidden}
+.hero{min-height:620px;text-align:center;display:grid;place-items:center;background:radial-gradient(ellipse at center,#10321e 0%,#050807 68%);position:relative;overflow:hidden}
 .hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#39ff880c 1px,transparent 1px),linear-gradient(90deg,#39ff880c 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(transparent,black,transparent);pointer-events:none}
 .hero-content{position:relative;animation:fadeup .9s ease both}
 .tag{display:inline-block;color:var(--green);letter-spacing:3px;font-size:12px;border:1px solid var(--border);border-radius:30px;padding:6px 13px}
 h1{font-size:clamp(35px,7vw,65px);line-height:1.18;margin:20px 0}
 h1 span,h2 span{color:var(--green);text-shadow:0 0 20px #39ff8833}
 p{color:var(--muted)}
-.hero p{max-width:680px;margin:0 auto 25px}
+.hero p{max-width:680px;margin:0 auto 25px}.top-profile{margin:0 auto 20px;max-width:540px;padding:20px 24px;background:rgba(7,18,11,.88);border:1px solid var(--green);border-radius:20px;box-shadow:0 0 30px #39ff8818;display:flex;align-items:center;justify-content:center;gap:18px;text-align:left}.top-avatar{width:86px;height:86px;flex:0 0 86px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#204b2e,#07120b);border:2px solid var(--green);color:var(--green);font-size:28px;font-weight:900;box-shadow:0 0 22px #39ff8830}.top-profile h2{font-size:21px;margin:0 0 3px}.top-profile p{font-size:13px;margin:0}.top-profile .badge{margin:6px 0 0}.section-menu{max-width:1100px;margin:0 auto;padding:22px;display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px}.section-option{display:block;text-align:center;padding:15px 10px;background:#0b1410;border:1px solid var(--border);border-radius:12px;color:#eafff0;font-weight:bold;font-size:14px;transition:.2s}.section-option span{display:block;font-size:22px;margin-bottom:5px}.section-option:hover{border-color:var(--green);color:var(--green);transform:translateY(-3px);box-shadow:0 0 18px #39ff8818}
 .btn{display:inline-block;padding:11px 19px;border:1px solid var(--green);border-radius:8px;color:var(--green);margin:5px;transition:.25s}
 .btn:hover{transform:translateY(-3px);box-shadow:0 0 20px #39ff8828}
 .primary{background:var(--green);color:#061009;font-weight:bold}
@@ -52,7 +52,7 @@ footer{text-align:center;border-top:1px solid var(--border);padding:28px 15px;fo
 footer strong{color:var(--green)}
 @keyframes fadeup{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 @keyframes pulse{0%,100%{box-shadow:0 0 15px #39ff8820}50%{box-shadow:0 0 30px #39ff8850}}
-@media(max-width:650px){nav{justify-content:center}.links{justify-content:center;gap:12px}.owner{grid-template-columns:1fr}section{padding:55px 18px}.logo{text-align:center;font-size:14px}}
+@media(max-width:650px){nav{justify-content:center}.links{justify-content:center;gap:12px}.owner{grid-template-columns:1fr}section{padding:55px 18px}.logo{text-align:center;font-size:14px}.top-profile{flex-direction:column;text-align:center}.hero{min-height:650px}}
 </style>
 </head>
 <body>
@@ -62,11 +62,19 @@ footer strong{color:var(--green)}
 </nav></header>
 <main>
 <section class="hero" id="home"><div class="hero-content">
+<div class="top-profile"><div class="top-avatar">AR</div><div><h2>MD Ashiqur Rahman <span>(Shawon)</span></h2><p>Class 10 • SSC Batch 2027</p><div class="badge">THE EXTRAORDINARY BOY</div></div></div>
 <div class="tag">WELCOME TO THE DIGITAL WORLD</div>
 <h1>THINK SMART.<br><span>CODE THE FUTURE.</span></h1>
 <p>A learning space for coding, technology, digital creativity, and responsible cybersecurity. Learn today and build a better tomorrow.</p>
 <a class="btn primary" href="#courses">Explore Courses</a><a class="btn" href="#owner-details">Meet the Owner</a>
 </div></section>
+<div class="section-menu" aria-label="Explore website sections">
+<a class="section-option" href="#home"><span>⌂</span>Home</a>
+<a class="section-option" href="#courses"><span>💻</span>Courses</a>
+<a class="section-option" href="#owner-details"><span>👤</span>Owner Profile</a>
+<a class="section-option" href="#cyber-safety"><span>🛡️</span>Cyber Safety</a>
+<a class="section-option" href="#about"><span>✦</span>About</a>
+</div>
 <section id="courses">
 <div class="tag">LEARN • PRACTICE • GROW</div><h2>Explore Our <span>Courses</span></h2>
 <p>Build your skills one step at a time with these beginner-friendly resources.</p>
